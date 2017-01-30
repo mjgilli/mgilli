@@ -14,26 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>edu/miracosta/cs113/DetectiveJill.java</name>
-			<type>1</type>
-			<location>C:/Users/w7176516/Desktop/DetectiveJill.java</location>
-		</link>
-		<link>
-			<name>edu/miracosta/cs113/RandomClue.java</name>
-			<type>1</type>
-			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/RandomClue.java</location>
-		</link>
-		<link>
-			<name>edu/miracosta/cs113/Theory.java</name>
-			<type>1</type>
-			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/Theory.java</location>
-		</link>
-		<link>
-			<name>edu/miracosta/cs113/TheoryItem.java</name>
-			<type>1</type>
-			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/TheoryItem.java</location>
-		</link>
-	</linkedResources>
 </projectDescription>
