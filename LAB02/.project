@@ -14,16 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>PowerOfTwo.java</name>
-			<type>1</type>
-			<location>C:/Users/w7176516/Desktop/PowerOfTwo.java</location>
-		</link>
-		<link>
-			<name>src/PowerOfTwo.java</name>
-			<type>1</type>
-			<location>C:/Users/w7176516/Desktop/PowerOfTwo.java</location>
-		</link>
-	</linkedResources>
 </projectDescription>
