@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>HW01</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>AssistantJack.java</name>
+			<type>1</type>
+			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/AssistantJack.java</location>
+		</link>
+		<link>
+			<name>DetectiveJill.java</name>
+			<type>1</type>
+			<location>C:/Users/w7176516/Desktop/DetectiveJill.java</location>
+		</link>
+		<link>
+			<name>RandomClue.java</name>
+			<type>1</type>
+			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/RandomClue.java</location>
+		</link>
+		<link>
+			<name>Theory.java</name>
+			<type>1</type>
+			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/Theory.java</location>
+		</link>
+		<link>
+			<name>TheoryItem.java</name>
+			<type>1</type>
+			<location>C:/Users/w7176516/Desktop/CS113/HW01/hw1files/TheoryItem.java</location>
+		</link>
+	</linkedResources>
+</projectDescription>
