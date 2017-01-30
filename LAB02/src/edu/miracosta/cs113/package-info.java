@@ -7,11 +7,10 @@
 * LAST MODIFIED: 2017-01-29 
 */
 /**
-* DetectiveJill
+* PowerOfTwo
 *****************************************************************************
 * PROGRAM DESCRIPTION:
-* This program solves a murder with 6 possible weapons, 10 locations, and
-* 6 murderers in 20 guesses or less
+* Determines if number is power of Two
 *****************************************************************************
 * ALGORITHM:
 * 1.BEGIN
