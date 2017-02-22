@@ -2,10 +2,6 @@ package edu.miracosta.cs113;
 import java.util.*;
 
 
-
-
-//ToDo comment metthods out addFirst..addLast...getFirst..addLast
-
 public class DoubleLinkedList<T>
 {
 	private Node<T> head;
@@ -34,12 +30,21 @@ public class DoubleLinkedList<T>
 		listIterator(index).add(obj);
 	}
 	
-
+	/** Add an item at the beginning of list.
+ 	@param obj The object to be inserted
+ 	@throws IndexOutOfBoundsException
+    		if the index is out of range (i < 0 || i > size())
+	 */
 	public void addFirst(T item) 
 	{
 		listIterator(0).add(item);
 	}
-
+	
+	/** Add an item at the end of list.
+ 		@param obj The object to be inserted
+ 		@throws IndexOutOfBoundsException
+    	if the index is out of range (i < 0 || i > size())
+	 */
 	public void addLast(T item)
 	{
 		listIterator(size).add(item);
@@ -54,11 +59,17 @@ public class DoubleLinkedList<T>
 		return listIterator(index).next(); 
 	}
 	
+	/** Get the element at beginning index.
+    	@return The item at index
+	 */
 	public T getFirst() 
 	{
 		return head.data;
 	}
-
+	
+	/** Get the element at end index.
+		@return The item at index
+	 */
 	public T getLast()
 	{
 		return tail.data;
@@ -71,12 +82,19 @@ public class DoubleLinkedList<T>
 	{
 		return size;
 	}
-	
+	/** creates anonymous iterator
+	    @param index at which to start iterator
+		@return The new iterator at specified index
+	 */
 	public DoubleListIterator listIterator(int index)
 	{
 		return new DoubleListIterator(index);
 	}
 	
+	/** remove item at specified index.
+	    @param index at which to remove item
+		@return The item which was removed
+	 */
 	public T remove(int index)
 	{
 		T object;
