@@ -1,6 +1,9 @@
 package edu.miracosta.cs113;
 import java.util.*;
 
+
+
+
 //ToDo comment metthods out addFirst..addLast...getFirst..addLast
 
 public class DoubleLinkedList<T>
@@ -9,6 +12,16 @@ public class DoubleLinkedList<T>
 	private Node<T> tail;
 	private int     size;
 	
+	
+	// DESCRIPTION:   Default constructor for SingleLinkedList
+	// PRECONDITION:  N/A
+	// POSTCONDITION: Head node will be created for linked list with null values 
+	public DoubleLinkedList() 
+    {
+        head = null;
+        tail = null;
+        size = 0;
+    } 
 	
 	/** Add an item at the specified index.
 	    @param index The index at which the object is to be inserted
@@ -24,12 +37,12 @@ public class DoubleLinkedList<T>
 
 	public void addFirst(T item) 
 	{
-		add(0, item);
+		listIterator(0).add(item);
 	}
 
 	public void addLast(T item)
 	{
-		add(size, item);
+		listIterator(size).add(item);
 	}
 	
 	/** Get the element at position index.
@@ -54,7 +67,7 @@ public class DoubleLinkedList<T>
     /** Get the size of the list
         @return The number of objects in the list
     */
-	public int getSize()
+	public int size()
 	{
 		return size;
 	}
@@ -82,7 +95,25 @@ public class DoubleLinkedList<T>
 	
 	
 	
-	
+	// DESCRIPTION:   Converts object to String representation
+	// PRECONDITION:  All instance variables have valid values
+	// POSTCONDITION: Returns String containing all instance variables	
+	public String toString()
+	{
+		Node<T> nodeRef =  head;
+		StringBuilder result = new StringBuilder();
+		while(nodeRef.next != null)
+		{
+			result.append(nodeRef.data);
+			if(nodeRef.next.next != null)
+			{
+				result.append(" ===> ");
+			}
+			nodeRef = nodeRef.next;
+		}
+		result.append(" ===> " + getLast());
+		return result.toString();
+	}
 
 
 
@@ -121,6 +152,7 @@ public class DoubleLinkedList<T>
 			if(i == size)
 			{
 				index = size;
+				nextItem = null;
 			}
 			else
 			{
@@ -143,7 +175,7 @@ public class DoubleLinkedList<T>
 			{
 				throw new NoSuchElementException();
 			}
-			lastItemReturned = nextItem.next;
+			lastItemReturned = nextItem;
 			nextItem = nextItem.next;
 			index++;
 			return lastItemReturned.data;
@@ -184,7 +216,7 @@ public class DoubleLinkedList<T>
 				
 			}
 			//add to head of list
-			if(nextItem == head)
+			else if(nextItem == head)
 			{
 				Node<T> newNode = new Node<T>(object);
 				newNode.next = nextItem;
