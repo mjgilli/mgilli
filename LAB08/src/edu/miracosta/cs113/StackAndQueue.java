@@ -10,6 +10,7 @@ public class StackAndQueue
 		Stack<Integer> numberStack1 = new Stack<Integer>();
 		Stack<Integer> numberStack2 = new Stack<Integer>();
 		
+		// add numbers to first stack
 		numberStack1.push(-1);
 		numberStack1.push(15);
 		numberStack1.push(23);
@@ -19,6 +20,7 @@ public class StackAndQueue
 		
 		System.out.println(numberStack1.peek() + " is the top of the stack.");
 		
+		// remove and put in stack2 and queue
 		while(!numberStack1.isEmpty())
 		{
 			numberStack2.push(numberStack1.peek());
@@ -32,10 +34,16 @@ public class StackAndQueue
 
 		}
 		
+		//output numbers in each stack
+		System.out.println("\n\nThe numbers in the data structures are output in this order");
+		System.out.printf("%10s", "Stack");
+		System.out.printf("%10s", "Queue");
+		System.out.println("\n----------------------");
 		while(!numberStack2.isEmpty() && !numberQueue.isEmpty())
 		{
-			System.out.println("number removed from stack2 is " + numberStack2.pop());
-			System.out.println("number removed from queue is " + numberQueue.poll());
+			System.out.printf("%10d", numberStack2.pop());
+			System.out.printf("%10d", numberQueue.poll());
+			System.out.println();
 		}
 	}
 }
