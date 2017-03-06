@@ -1,8 +1,9 @@
 /**
- * MUST MAKE TESTER FOR LINKED LIST STACK
- * PLANNING ON SOLVING PROBLEM BOTH WAYS
- * TRY TO USE JUNIT TESTING EVENTUALLY 
- * DELETE THIS BEFORE COMMITING
+ * Contains:
+ * LinkedListStack
+ * SingleLinkedList used for creating Stack
+ * StackInterface
+ * LinkedListStackTest junit testing for LinkedListStack
  */
 /**
  * @author w7176516

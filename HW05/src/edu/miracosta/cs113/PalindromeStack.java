@@ -1,8 +1,58 @@
 package edu.miracosta.cs113;
-
+/********************************************
+* AUTHOR: Matthew Gilli
+* COURSE: CS 113
+* SECTION: MW 3:30-5:20
+* HOMEWORK #: 05
+* PROJECT #:  01
+* LAST MODIFIED: 2017-03-05
+********************************************/
+/*****************************************************************************
+* PalindromeStack
+*****************************************************************************
+* PROGRAM DESCRIPTION:
+* Determines whether sentence is palindrome
+* deletes all special characters and spaces
+* observes only lowercase
+*****************************************************************************
+* ALGORITHM:
+* 1. BEGIN
+* 2. 	ASSIGN keyboard
+* 3.	ASSIGN originalStack
+* 4.	ASSIGN compareStack
+* 5.	ASSIGN newSentence
+* 6.	ASSIGN isPalindrome
+* 7.	INPUT  sentence
+* 8.	CALC   sentence.toLowerCase()
+* 9.	FOR(int i = 0; i < sentence.length(); i++)
+* 10.		IF(sentence.charAt(i) >= 'a' && sentence.charAt(i) <= 'z' )
+* 11.			CALC newSentence
+* 12.		END IF
+* 13.	END FOR
+* 14.	FOR(int i = 0; i < newSentence.length(); i++)
+* 15.		CALC originalStack.push(newSentence.charAt(i))
+* 16.	END FOR
+* 17.	IF(newSentence.length() % 2 == 0)
+* 18.		CALC numberOfPushes
+* 20.	ELSE
+* 21.		CALC numberOfPushes
+* 22.	END IF
+* 23.	FOR(int i = 0; i < numberOfPushes; i++)
+* 24.		CALC compareStack.push(originalStack.pop())
+* 25.	END FOR
+* 26.	IF(newSentence.length() % 2 != 0)
+* 27.		CALC compareStack.pop()
+* 28.	END IF
+* 29.	WHILE(!originalStack.empty() && isPalindrome)
+* 30.		CALC isPalindrome
+* 31.	END WHILE
+* 32.	OUTPUT message
+* 13. END
+*****************************************************************************
+* ALL IMPORTED PACKAGES NEEDED AND PURPOSE:
+* Scanner for user input
+*****************************************************************************/
 import java.util.Scanner;
-
-
 public class PalindromeStack
 {
 	public static void main(String[] args)
