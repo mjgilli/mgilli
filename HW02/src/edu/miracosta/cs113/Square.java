@@ -1,4 +1,8 @@
+package edu.miracosta.cs113;
+
 import java.util.Scanner;
+
+import classPackage.Shape;
 public class Square extends Shape
 {
 	private double side;
@@ -34,6 +38,7 @@ public class Square extends Shape
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the side of the Square");
 		side = in.nextDouble();
+		in.close();
 	}
 	
 	public String toString()

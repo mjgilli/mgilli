@@ -1,5 +1,8 @@
-import static java.lang.Math.sqrt;
+package edu.miracosta.cs113;
+
 import java.util.Scanner;
+
+import classPackage.Shape;
 public class EquilateralTriangle extends Shape
 {
 	private double side;
@@ -41,6 +44,7 @@ public class EquilateralTriangle extends Shape
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the side of the Equilateral Triangle");
 		side = in.nextDouble();
+		in.close();
 	}
 	
 	public String toString()

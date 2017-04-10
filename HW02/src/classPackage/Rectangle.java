@@ -1,3 +1,5 @@
+package classPackage;
+
 import java.util.Scanner;
 public class Rectangle extends Shape
 {
@@ -43,6 +45,7 @@ public class Rectangle extends Shape
 		width = in.nextDouble();
 		System.out.println("Enter the height of the Rectangle");
 		height = in.nextDouble();
+		in.close();
 	}
 	
 	public String toString()

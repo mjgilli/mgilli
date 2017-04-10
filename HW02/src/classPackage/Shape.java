@@ -1,3 +1,5 @@
+package classPackage;
+
 public abstract class Shape
 {
 	private String shapeName;

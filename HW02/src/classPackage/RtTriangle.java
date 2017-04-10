@@ -1,4 +1,5 @@
-import static java.lang.Math.sqrt;
+package classPackage;
+
 import java.util.Scanner;
 public class RtTriangle extends Shape
 {
@@ -49,6 +50,7 @@ public class RtTriangle extends Shape
 		base = in.nextDouble();
 		System.out.println("Enter the height of the Right Triangle");
 		height = in.nextDouble();
+		in.close();
 	}
 	
 	public String toString()

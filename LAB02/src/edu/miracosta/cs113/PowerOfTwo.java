@@ -46,6 +46,7 @@ public class PowerOfTwo
 		System.out.print("What number would you like to test to find "
 						+"out if it is a power of two? ");
 		temp = keyboard.nextLine();
+		keyboard.close();
 		numToTest = Integer.parseInt(temp);
 		
 		isPowerOfTwo = isPowerOfTwo(numToTest);

@@ -1,4 +1,11 @@
+package edu.miracosta.cs113;
+
 import java.util.Scanner;
+
+import classPackage.Circle;
+import classPackage.Rectangle;
+import classPackage.RtTriangle;
+import classPackage.Shape;
 /**
 	Computes the are and perimeter of selcted figures.
 	@author Koffman and WolfGang
@@ -64,6 +71,7 @@ public class ComputeAreaAndPerimeter
 			System.out.println("Enter E for Equilateral Triangle");
 			System.out.println("Enter S for Square");
 			String figType = in.next();
+			in.close();
 			if(figType.equalsIgnoreCase("c"))
 			{
 				return new Circle();
