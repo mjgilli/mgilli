@@ -1,3 +1,85 @@
+/********************************************
+* AUTHOR: Matthew Gilli
+* COURSE: CS 113
+* SECTION: MW 3:30-5:20
+* HOMEWORK #: 07
+* PROJECT #:  01
+* LAST MODIFIED: 2017-04-09
+********************************************/
+/*****************************************************************************
+* MorseTranslator
+*****************************************************************************
+* PROGRAM DESCRIPTION:
+* Menu gives you choices to decode messages from file or input
+* and shows translation tree
+*****************************************************************************
+* ALGORITHM:
+* 1. BEGIN
+* 2.	ASSIGN morseTree
+* 3.	ASSIGN keyboard
+* 4.	ASSIGN fileName
+* 5.	ASSIGN treeRead
+* 6.	ASSIGN translation
+* 7.	ASSIGN decoder
+* 8.	TRY
+* 9.		ASSIGN treeRead
+* 10.	CATCH (FileNotFoundException e)
+* 11.	CALC morseTree.readBinaryTree();
+* 12.	CALC treeRead.close()
+* 13.	OUTPUT menu
+* 14. 	INPUT choice
+* 15.	IF (choice == 'A')
+* 16.		OUTPUT morseTree
+* 17.	ELSE IF (choice == 'B')
+* 18.		CALC fileName
+* 19.		TRY
+* 20.			ASSIGN decoder
+* 21.		CATCH (FileNotFoundException e)
+* 22.		ASSIGN tempTree
+* 23.		DO
+* 24.			CALC temp
+* 25.			FOR(int i to temp.length)
+* 26.				IF(temp.charAt == *)
+* 27.					CALC getLeftSubTree
+* 28.				END IF
+* 29.				IF(temp.charAt == -)
+* 30.					CALC getRightSubTree
+* 31.				END IF
+* 32.			END FOR
+* 33.			CALC translation
+* 34.			ASSIGN tempTree
+* 35.			WHILE (decoder.hasNext)
+* 36.			OUTPUT translation
+* 37.	ELSE IF ( choice == 'C')
+* 38.		ASSIGN tempTree
+* 39.		INPUT temp
+* 40.		CALC splited
+* 41.		FOR(int j= 0 to temp.length)
+* 42.			CALC temp
+* 43.			FOR (int i = 0 to temp.length)
+* 44.				IF(temp.charAt == *)
+* 45.					CALC getLeftSubTree
+* 46.				END IF
+* 47.				IF(temp.charAt == -)
+* 48.					CALC getRightSubTree
+* 49.				END IF
+* 50.			END FOR	
+* 51.			CALC translation
+* 52.			ASSIGN tempTree
+* 53.		END FOR	
+* 54.		OUTPUT translation
+* 55.	ELSE
+* 56.		OUTPUT message
+* 57.	END IF
+* 58.	OUTPUT thank you
+* 59. END		
+*****************************************************************************
+* ALL IMPORTED PACKAGES NEEDED AND PURPOSE:
+* Scanner for user input
+* collection for sorting array list
+* array list for storing data
+*****************************************************************************/
+
 package edu.miracosta.cs113;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -49,7 +131,7 @@ public class MorseTranslator
 		System.out.print("Enter here: ");
 		temp = keyboard.nextLine();
 		choice = temp.charAt(0);
-		//keyboard.close();
+		
 		
 		temp = "*** --- ***";
 		/******* PROCESSING SECTION ********/
