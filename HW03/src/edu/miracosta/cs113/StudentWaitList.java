@@ -71,14 +71,6 @@ public class StudentWaitList
 		waitList.removeLast();
 		System.out.println(waitList);
 		
-		
-		
-		
-		
-		
-		
-		
-	
 		/***** OUTPUT SECTION *****/
 		
 	}

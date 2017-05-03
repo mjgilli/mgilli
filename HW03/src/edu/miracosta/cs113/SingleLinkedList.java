@@ -182,7 +182,7 @@ public class SingleLinkedList <T>
 	// POSTCONDITION: Returns String containing all instance variables	
 	public String toString()
 	{
-		Node nodeRef =  head;
+		Node<T> nodeRef =  head;
 		StringBuilder result = new StringBuilder();
 		while(nodeRef.link != null)
 		{
@@ -204,12 +204,6 @@ public class SingleLinkedList <T>
         public Node() 
         {
             data = null;
-            link = null;
-        }
-
-        public Node(T newData) 
-        {
-            data = newData;
             link = null;
         }
 

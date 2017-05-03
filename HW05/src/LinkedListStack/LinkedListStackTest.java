@@ -8,15 +8,15 @@ public class LinkedListStackTest
 	public void testEmpty()
 	{
 		LinkedListStack<Integer> testStack = new LinkedListStack<Integer>();
-		Assert.assertTrue(testStack.empty() == true);
+		Assert.assertTrue(testStack.empty());
 		testStack.push(1);
-		Assert.assertTrue(testStack.empty() == false);
+		Assert.assertFalse(testStack.empty());
 		testStack = new LinkedListStack<Integer>();
 		testStack.push(-1);
-		Assert.assertTrue(testStack.empty() == false);
+		Assert.assertFalse(testStack.empty());
 		testStack = new LinkedListStack<Integer>();
 		testStack.push(0);
-		Assert.assertTrue(testStack.empty() == false);
+		Assert.assertFalse(testStack.empty());
 		
 	}
 	
