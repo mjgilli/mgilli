@@ -19,7 +19,7 @@ public class AVLTreeTest
 		stringTree.add("brown");
 		stringTree.add("fox");
 		stringTree.add("jumps");
-		//stringTree.add("over");
+		stringTree.add("over");
 	
 		System.out.println(stringTree);
 		

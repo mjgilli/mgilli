@@ -30,7 +30,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 		 * @param item
 		 *            The data field
 		 */
-		public AVLNode(E item) {
+		public AVLNode(E item) 
+		{
 			super(item);
 			balance = BALANCED;
 		}
@@ -41,7 +42,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 		 * 
 		 * @return String representation of this object
 		 */
-		public String toString() {
+		public String toString() 
+		{
 			return balance + ": " + super.toString();
 		}
 	}
@@ -57,7 +59,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 	 * @throws ClassCastException
 	 *             if item is not Comparable
 	 */
-	public boolean add(E item) {
+	public boolean add(E item) 
+	{
 		increase = false;
 		root = add((AVLNode<E>) root, item);
 		return addReturn;
@@ -118,16 +121,10 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 					increase = false;
 					return rebalanceRight(localRoot);
 				} 
-				else 
-				{
-					return localRoot;
-				}
 			} 
-			else 
-			{
-				return localRoot;
-			}
+			return localRoot;
 		}
+			
 
 	}
 
@@ -178,6 +175,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 			localRoot.balance = AVLNode.BALANCED;
 		}
 		// Now rotate the local root right.
+		leftChild.balance = AVLNode.BALANCED;
+		localRoot.balance = AVLNode.BALANCED;
 		return (AVLNode<E>) rotateRight(localRoot);
 	}
 	
@@ -220,6 +219,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 			localRoot.balance = AVLNode.BALANCED;
 		}
 		// Now rotate the local root left.
+		rightChild.balance = AVLNode.BALANCED;
+		localRoot.balance = AVLNode.BALANCED;
 		return (AVLNode<E>) rotateLeft(localRoot);
 	}
 
